@@ -1,17 +1,12 @@
 :root {
-	--container-width: 1600px;
-	--container-padding: 0;
+	--container-width: 1560px;
+	--container-padding: 20px;
 
-	--page-bg: #fff;
+	--text-color-white: #fff;
 	--text-color: #000;
 	--accent: #ac182c;
 
     --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
-}
-
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
 }
