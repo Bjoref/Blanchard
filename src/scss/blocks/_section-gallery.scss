@@ -1,9 +1,14 @@
 :root {
-  --form-control-color: rebeccapurple;
+  --form-control-color: #C283F3;
 }
 
 .section-gallery {
     background-image: url(./../img/section-gallery/section-gallery__bg.png);
+
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 
     &__title {
         color: var(--text-color-white);
@@ -25,39 +30,41 @@
         margin-right: 12px;
         -webkit-appearance: none;
         appearance: none;
-        background-color: var(--form-background);
-      
-        font: inherit;
-        color: currentColor;
-        width: 1.15em;
-        height: 1.15em;
-        border: 0.15em solid currentColor;
-        border-radius: 0.15em;
+        color: var(--text-color-white);
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--text-color-white);
         transform: translateY(-0.075em);
-      
         display: grid;
         place-content: center;
 
+        
+
         &::before {
             content: "";
-            width: 0.65em;
-            height: 0.65em;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            width: 4px;
+            height: 4px;
+            clip-path: circle(50%);
             transform: scale(0);
             transform-origin: bottom left;
             transition: 120ms transform ease-in-out;
-            box-shadow: inset 1em 1em var(--form-control-color);
-            /* Windows High Contrast Mode */
-            background-color: CanvasText;
+            box-shadow: inset 4px 4px var(--form-control-color);
         }
 
-        &:checked::before {
-            transform: scale(1);
+        &:checked {
+            border-color: var(--form-control-color);
+            &::before {
+                transform: scale(1);
+            }
         }
+    }
 
-        &:focus {
-            outline: max(2px, 0.15em) solid currentColor;
-            outline-offset: max(2px, 0.15em);
-          }
+    &__content {
+        display: flex;
+
+        &-left {
+            display: flex;
+            align-items: flex-end;
+        }
     }
 }
