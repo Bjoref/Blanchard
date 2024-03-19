@@ -1,14 +1,77 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+	background-color: #000;
 
-	h1 {
-		font-size: 32px;
+	&__container {
+		padding-bottom: 48px;
+		padding-top: 47px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 1024px) {
+			padding-bottom: 40px;
+			padding-top: 40px;
+		}
+
+		@media (max-width: 360px) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			flex-direction: column-reverse;
+		}
 	}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
+	&__logo {
+	
+		&_tablet {
+			display: none;
+		}
+		&_mobile {
+			display: none;
+		}
+
+		&-link {
+			@media (max-width: 768px) {
+				padding-left: 2px;
+			}
+		}
+
+		@media (max-width: 360px) {
+			&_mobile {
+				display: initial;
+			}
+
+			&_desk {
+				display: none;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+
+		@media (max-width: 360px) {
+			margin-bottom: 20px;
+		}
+
+		&-item {
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+		}
+
+		&-svg {
+			height: 45px;
+			width: 45px;
+
+			@media (max-width: 1024px) {
+				height: 60px;
+				width: 60px;
+			}
+
+			@media (max-width: 360px) {
+				height: 50px;
+				width: 50px;
+			}
+		}
 	}
 }

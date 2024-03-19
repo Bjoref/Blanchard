@@ -1,14 +1,16 @@
 .section-form {
     &__container {
         padding-top: 38px;
-        padding-bottom: 43px;
+        padding-bottom: 38px;
 
         @media (max-width: 1640px) {
             padding-top: 36px;
+            padding-bottom: 43px;
         }
 
         @media (max-width: 360px) {
             padding-top: 0;
+            padding-bottom: 50px;
         }
     }
 
