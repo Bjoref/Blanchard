@@ -1,23 +1,109 @@
 .section-form {
+    &__container {
+        padding-top: 38px;
+
+        @media (max-width: 1640px) {
+            padding-top: 36px;
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        @media (max-width: 1640px) {
+            flex-wrap: wrap;
+        }
+    }
     &__address-block {
+        padding-top: 7px;
+        margin-right: 5%;
+
+        @media (max-width: 1640px) {
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
         &-b {
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
+
+            @media (max-width: 1640px) {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
         }
         &-p {
             font-size: 16px;
             line-height: 32px;
+
+            @media (max-width: 1640px) {
+                font-size: 14px;
+                line-height: initial;
+            }
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 14px;
+        margin-right: 5%;
+
+        @media (max-width: 1640px) {
+            margin-right: 0;
+            margin-bottom: 30px;
         }
     }
 
     &__input {
+        width: 270px;
+        height: 50px;
         padding: 9px 43px 9px 24px;
         font-size: 16px;
         line-height: 32px;
         color: var(--grey-color);
         border: 1px solid var(--black-color);
         border-radius: 100px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__submit-btn {
+        width: 329px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2px;
+        border-radius: 100px;
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px solid var(--primary-color);
+
+        @media (max-width: 1640px) {
+            width: 343px;
+        }
+    }
+
+    &__social {
+        &-list {
+            display: flex;
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 21px;
+                }
+            }
+        }
+        &-title {
+            display: inline-block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
     
     // &__label {
