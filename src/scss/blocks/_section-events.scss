@@ -170,6 +170,8 @@
         
         &:active {
             color: var(--black-color);
+            padding: 0;
+            background-color: transparent;
             border-bottom: 1px solid var(--black-color);
         }
 
