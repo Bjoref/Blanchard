@@ -1,5 +1,5 @@
 .footer {
-	background-color: #000;
+	background-color: var(--black-color);
 
 	&__container {
 		padding-bottom: 48px;
@@ -59,6 +59,28 @@
 			}
 		}
 
+		&-link {
+			&:hover,
+			&:focus {
+				border: none;
+				outline: none;
+				& > .footer__list-svg {
+					& > path {
+						fill: var(--white-color);
+					}
+				}
+			}
+
+			&:active {
+				border: none;
+				outline: none;
+				& > .footer__list-svg {
+					& > path {
+						fill: var(--primary-color);
+					}
+				}
+			}
+		}
 		&-svg {
 			height: 45px;
 			width: 45px;

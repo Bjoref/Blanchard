@@ -2,15 +2,14 @@ import loader from './modules/loader.js'
 
 loader();
 
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+const sectionGalleryCheckbox = document.querySelectorAll('.section-gallery__form-control');
 
-const swiper = new Swiper('.swiper', {
-	loop: true,
-	parallax: true,
-	speed: 1000,
-
-	keyboard: {
-		enabled: true,
-	},
-});
+sectionGalleryCheckbox.forEach((checkbox) => {
+	checkbox.addEventListener('input', () => {
+		if(checkbox.classList.contains('section-gallery__form-control_checked')) {
+			checkbox.classList.remove('section-gallery__form-control_checked')
+		} else {
+			checkbox.classList.add('section-gallery__form-control_checked')
+		}
+	})
+})

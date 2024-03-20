@@ -1,6 +1,35 @@
-.search__icon {
+.search {
+  &__button {
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      padding: 5px;
+      background-color: var(--bright-primary-color);
+    }
+  }
+  &__icon {
+    width: 28px;
+    height: 28px;
+
+    & > path,
+    & > rect {
+      fill: var(--white-color);
+      transition: all 0.2s ease-in-out;
+    }
+
     @media (max-width: 767px) {
-		width: 18px;
-        height: 18px;
-	}
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover > path,
+    &:hover > rect {
+      fill: var(--bright-primary-color);
+    }
+
+    &:active > path,
+    &:active > rect {
+      fill: var(--dark-primary-color);
+    }
+  }
 }

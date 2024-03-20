@@ -6,24 +6,28 @@
     </div>
 
     <form action="#" class="section-form__form">
-      <input
-        type="text"
-        id="name"
-        required
-        class="section-form__input"
-        placeholder="Имя*"
-      />
-      <!-- <label for="name" class="section-form__label">Имя*</label> -->
-
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        required
-        class="section-form__input"
-        placeholder="Телефон*"
-      />
-      <!-- <label for="name" class="section-form__label">Телефон*</label> -->
+      <div class="section-form__block-input">
+        <input
+          type="text"
+          id="name"
+          required
+          class="section-form__input"
+          placeholder="Имя*"
+          pattern="^[А-Яа-яЁё\s]+$"
+        />
+        <label for="name" class="section-form__label">Недопустимый формат</label>
+      </div>
+      
+      <div class="section-form__block-input">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          class="section-form__input"
+          placeholder="Телефон*"
+        />
+      </div>
 
       <button class="section-form__submit-btn section-form__submit-btn_desk" type="submit">
         Заказать обратный звонок
@@ -38,7 +42,7 @@
       <b class="section-form__social-title"> Связаться в один клик </b>
       <ul class="section-form__social-list">
         <li class="section-form__social-list-item">
-          <a href="#">
+          <a href="#" class="section-form__social-list-link">
             <svg
               class="section-form__social-list-svg"
               viewBox="0 0 40 40"
@@ -64,7 +68,7 @@
           </a>
         </li>
         <li class="section-form__social-list-item">
-          <a href="#">
+          <a href="#" class="section-form__social-list-link">
             <svg
               class="section-form__social-list-svg"
               viewBox="0 0 40 40"
@@ -95,5 +99,3 @@
     </div>
   </div>
 </div>
-<!--   
-pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->

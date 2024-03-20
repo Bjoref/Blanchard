@@ -153,6 +153,26 @@
         color: var(--primary-color);
         border-bottom: 1px solid var(--primary-color);
 
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: var(--dark-primary-color);
+            border-bottom: 1px solid var(--dark-primary-color);
+        }
+
+        &:focus {
+            padding: 5px;
+            color: var(--white-color);
+            border-bottom: 1px solid var(--white-color);
+            background-color: var(--primary-color);
+            outline: none;
+        }
+        
+        &:active {
+            color: var(--black-color);
+            border-bottom: 1px solid var(--black-color);
+        }
+
         @media (max-width: 340px) {
             margin-left: 6px;
         }

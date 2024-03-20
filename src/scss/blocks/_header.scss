@@ -1,5 +1,5 @@
 .header {
-	background-color: #000;
+	background-color: var(--black-color);
 	&__container {
 		display: flex;
 		align-items: center;
@@ -37,7 +37,7 @@
 	&__content {
 		width: 100%;
 		z-index: 9;
-		background-color: var(--black-color);
+		background-color: var(--text-color);
 	
 		pointer-events: none;
 	}
