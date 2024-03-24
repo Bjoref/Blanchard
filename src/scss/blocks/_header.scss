@@ -3,12 +3,12 @@
   padding-bottom: 11px;
   background-color: var(--black-color);
 
-  @media (min-width: 767.98px) {
+  @media (min-width: 575.98px) {
     padding-top: 32px;
     padding-bottom: 25px;
   }
 
-  @media (min-width: 1919.98px) {
+  @media (min-width: 1399.98px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -53,7 +53,7 @@
     min-width: 96.8px;
     min-height: 22px;
 
-    @media (min-width: 767.98px) {
+    @media (min-width: 575.98px) {
       width: 187.8px;
       height: 42px;
       min-width: 187.8px;
@@ -66,7 +66,7 @@
       }
     }
 
-    @media (min-width: 1919.98px) {
+    @media (min-width: 1399.98px) {
       width: 173px;
       height: 39.9px;
       min-width: 173px;
@@ -94,7 +94,7 @@
       display: inline;
     }
 
-    @media (min-width: 1919.98px) {
+    @media (min-width: 1399.98px) {
       &_desk {
         display: inline;
       }

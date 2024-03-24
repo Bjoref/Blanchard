@@ -3,11 +3,11 @@
   max-width: var(--container-width);
   margin: 0 auto;
 
-  @media (min-width: 767.98px) {
+  @media (min-width: 575.98px) {
     padding: 0 var(--container-padding_tablet);
   }
 
-  @media (min-width: 1919.98px) {
+  @media (min-width: 1399.98px) {
     padding: 0 var(--container-padding_desk);
   }
 }
@@ -39,14 +39,11 @@ h6 {
 .sections-title {
   margin: 0;
   max-width: 700px;
-  font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
-  @media (max-width: 767.98px) {
-    font-size: 28px;
-  }
+  font-size: 28px;
 }
 
