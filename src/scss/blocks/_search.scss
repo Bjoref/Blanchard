@@ -1,30 +1,37 @@
 .search {
   &__button {
-    transition: all 0.2s ease-in-out;
+    width: 18px;
+    height: 18px;
+    transition: outline 0.2s ease-in-out;
+
+    @media (min-width: 767.98px) {
+      width: 28px;
+      height: 28px;
+    }
 
     &:focus {
-      padding: 5px;
-      background-color: var(--bright-primary-color);
+      background-color: var(--dark-primary-color);
+      color: var(--white-color);
+      outline: 5px solid  var(--dark-primary-color);
     }
 
     &:active {
-      padding: 0;
       background-color: transparent;
     }
   }
   &__icon {
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: 767.98px) {
+      width: 28px;
+      height: 28px;
+    }
 
     & > path,
     & > rect {
       fill: var(--white-color);
       transition: all 0.2s ease-in-out;
-    }
-
-    @media (max-width: 767px) {
-      width: 18px;
-      height: 18px;
     }
 
     &:hover > path,

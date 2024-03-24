@@ -3,51 +3,14 @@
   max-width: var(--container-width);
   margin: 0 auto;
 
-  @media (max-width: 3840px) and (min-width: 2400px) {
-    max-width: 100%;
-    padding-right: 161px;
-    padding-left: 161px;
-  }
-  @media (max-width: 1600px) {
-    width: 100%;
-  }
-  @media (max-width: 1399.98px) {
-    padding-top: 29px;
-    padding-left: 50px;
-    padding-right: 50px;
-    max-width: 1024px;
-  }
-  @media (max-width: 991.98px) {
-    max-width: none;
-  }
-  @media (max-width: 500px) {
-    padding-left: 15px;
-    padding-right: 15px;
+  @media (min-width: 767.98px) {
+    padding: 0 var(--container-padding_tablet);
   }
 
-  &-right {
-    /* overflow-x: hidden; */
-    padding-left: calc(
-      (100% - var(--container-width)) / 2 + var(--container-padding)
-    );
-  
-    @media (max-width: var(--laptop-size)) {
-      padding-left: var(--container-padding);
-    }
+  @media (min-width: 1919.98px) {
+    padding: 0 var(--container-padding_desk);
   }
-
-  &-left {
-    /* overflow-x: hidden; */
-    padding-right: calc(
-      (100% - var(--container-width)) / 2 + var(--container-padding)
-    );
-  
-    @media (max-width: var(--laptop-size)) {
-      padding-right: var(--container-padding);
-    }
-  }  
 }
-
 
 p {
   margin: 0;
@@ -82,7 +45,7 @@ h6 {
   line-height: 59px;
   letter-spacing: 0em;
   text-align: left;
-  @media (max-width: 340px) {
+  @media (max-width: 767.98px) {
     font-size: 28px;
   }
 }

@@ -36,9 +36,9 @@
             color: var(--bright-primary-color);
         }
 
-        &:focus {
+        &:focus,
+        &:focus-within {
             color: var(--bright-primary-color);
-
             & > .section-gallery__input {
                 color: var(--bright-primary-color);
                 border: 1px solid var(--bright-primary-color);
