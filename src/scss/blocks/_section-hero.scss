@@ -88,6 +88,21 @@
     color: var(--white-color);
     font-size: 12px;
     font-weight: 700;
+    transition: outline .1s ease-in-out;
+
+    &:hover {
+        outline: 3px solid var(--brightest-primary-color);
+    }
+
+    &:active {
+        outline: 3px solid var(--brightest-primary-color);
+        background-color: var(--dark-primary-color);
+    }
+
+    &:focus {
+        outline: 2px solid var(--brightest-primary-color);
+        outline-offset: 5px;
+    }
 
     @media (min-width: 767.98px) {
       width: 314px;

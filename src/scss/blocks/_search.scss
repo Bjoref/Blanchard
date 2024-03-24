@@ -2,7 +2,7 @@
   &__button {
     width: 18px;
     height: 18px;
-    transition: outline 0.2s ease-in-out;
+    transition: outline 0.1s ease-in-out;
 
     @media (min-width: 575.98px) {
       width: 28px;
@@ -31,7 +31,7 @@
     & > path,
     & > rect {
       fill: var(--white-color);
-      transition: all 0.2s ease-in-out;
+      transition: fill 0.1s ease-in-out;
     }
 
     &:hover > path,

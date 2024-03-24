@@ -28,7 +28,7 @@
 
   &__logo {
     margin-right: 170px;
-    transition: outline 0.2s ease-in-out;
+    transition: outline 0.1s ease-in-out;
     &:focus,
     &:focus-visible {
       outline: 5px solid var(--dark-primary-color);
@@ -72,11 +72,12 @@
 
     & a {
       position: relative;
-      transition: outline 0.2s ease-in-out;
+      transition: outline 0.1s ease-in-out, outline-offset 0.1s ease-in-out;
 
       &:focus {
         background-color: var(--dark-primary-color);
         color: var(--white-color);
+        outline-offset: 0;
         outline: 5px solid var(--dark-primary-color);
       }
 

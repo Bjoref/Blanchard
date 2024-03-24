@@ -34,7 +34,7 @@
 		}
 
 		&-link {
-			transition: outline .2s ease-in-out, background-color .2s ease-in-out;
+			transition: outline .1s ease-in-out, background-color .2s ease-in-out;
 			
 			&:focus {
 				background-color: var(--dark-primary-color);
