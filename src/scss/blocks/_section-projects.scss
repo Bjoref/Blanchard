@@ -3,25 +3,13 @@
   padding-bottom: 40px;
   @media (min-width: 767.98px) {
     padding-top: 83px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: 1023.98px) {
     padding-top: 54px;
     padding-bottom: 46px;
   }
-  // &__container {
-  //     padding-top: 82px;
-  //     padding-bottom: 80px;
-
-  //     @media (max-width: 800px) {
-  //         padding-top: 84px;
-  //     }
-
-  //     @media (max-width: 340px) {
-  //         padding-top: 40px;
-  //         padding-bottom: 40px;
-  //     }
-  // }
 
   &__text {
     max-width: 658px;
