@@ -31,8 +31,6 @@ let options = {
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(".element-animation");
 
-console.log(elements)
-
 for (let elm of elements) {
   observer.observe(elm);
 }

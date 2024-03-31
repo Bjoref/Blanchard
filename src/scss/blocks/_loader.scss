@@ -26,14 +26,6 @@
 	position: relative;
 	background: rgba(255, 255, 255, 0.15);
 	overflow: hidden;
-
-    @media (max-width: 412px) {
-		width: 280px;
-	}
-
-	@media (max-width: 300px) {
-		width: 200px;
-	}
 }
 .loader::after {
 	content: '';

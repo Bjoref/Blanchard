@@ -19,6 +19,52 @@
     position: relative;
   }
 
+  &__search-button {
+    width: 18px;
+    height: 18px;
+    transition: outline 0.1s ease-in-out;
+
+    @media (min-width: 575.98px) {
+      width: 28px;
+      height: 28px;
+    }
+
+    &:focus {
+      background-color: var(--dark-primary-color);
+      color: var(--white-color);
+      outline: 5px solid  var(--dark-primary-color);
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+  &__search-icon {
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: 575.98px) {
+      width: 28px;
+      height: 28px;
+    }
+
+    & > path,
+    & > rect {
+      fill: var(--white-color);
+      transition: fill 0.1s ease-in-out;
+    }
+
+    &:hover > path,
+    &:hover > rect {
+      fill: var(--bright-primary-color);
+    }
+
+    &:active > path,
+    &:active > rect {
+      fill: var(--dark-primary-color);
+    }
+  }
+
   & {
     a {
       color: #fff;
